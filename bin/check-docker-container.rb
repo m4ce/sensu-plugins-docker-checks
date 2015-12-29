@@ -14,12 +14,6 @@ class CheckDockerContainer < Sensu::Plugin::Check::CLI
          :long => "--url <URL>",
          :default => "unix:///var/run/docker.sock"
 
-  option :warn,
-         :description => "Warn instead of throwing a critical failure",
-         :short => "-w",
-         :long => "--warn",
-         :boolean => false
-
   def initialize()
     super
 

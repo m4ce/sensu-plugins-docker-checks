@@ -7,6 +7,8 @@ A sensu plugin to monitor Docker containers.
 The plugin accepts the following command line options:
 
 ```
+Usage: check-docker-container.rb (options)
+        --url <URL>                  Docker daemon URL (default: unix:///var/run/docker.sock)
 ```
 
 ## Author
