@@ -9,6 +9,8 @@ require 'sensu-plugin/check/cli'
 require 'docker'
 
 class CheckDockerContainer < Sensu::Plugin::Check::CLI
+  banner "Usage: #{$0} <options> <containerId>"
+
   option :url,
          :description => "Docker daemon URL (default: unix:///var/run/docker.sock)",
          :long => "--url <URL>",
